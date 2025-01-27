@@ -1,0 +1,107 @@
+/* RentalList.css */
+
+.rental-list-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.type-button {
+  padding: 10px 15px;
+  border: 1px solid #007BFF;
+  background-color: #fff;
+  color: #007BFF;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.type-button.active {
+  background-color: #007BFF;
+  color: white;
+}
+
+button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.rental-results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.rental-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.rental-card h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.rental-card p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .search-form {
+    width: 90%;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .type-button {
+    width: 100%;
+  }
+
+  .rental-card {
+    width: 100%;
+  }
+}
