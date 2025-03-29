@@ -1,7 +1,7 @@
 // HomePage.js
 import React, { useState } from 'react';
-import Navbar from '../Navbar/Navbar';  
-import Footer from '../Footer/Footer';
+// import Navbar from '../Navbar/Navbar';  
+// import Footer from '../Footer/Footer';
 import { Link, useNavigate } from 'react-router-dom'; 
 import axios from 'axios'
 import './HomePage.css';
@@ -68,8 +68,8 @@ const HomePage = () => {
   };
 
   return (
-    <div>
-      <Navbar />
+    <>
+      {/* <Navbar /> */}
       
       {/* Button Container */}
       <div className="button-container">
@@ -190,8 +190,8 @@ const HomePage = () => {
         </div>
       )}
       
-      <Footer />
-    </div>
+      {/* <Footer /> */}
+    </>
   );
 };
 

@@ -130,3 +130,16 @@ button[type="submit"]:hover {
     width: 80%;
   }
 }
+
+
+@media(max-width: 1025px){
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+}

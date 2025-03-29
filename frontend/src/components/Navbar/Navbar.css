@@ -7,6 +7,7 @@ body {
 }
 
 /* Navbar styles */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -158,4 +159,43 @@ footer {
 
 .logout-item:hover {
   color: rgba(0, 229, 255, 0.768); /* Change to blue on hover */
+}
+
+
+
+
+
+/* media queries */
+
+@media (max-width:630px){
+.navbar {
+  background-color: #c80fd5;
+}
+}
+
+@media (max-width: 630px) {
+   
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding-top: 90px; /* Add space for the fixed navbar */
+  }
+
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center content */
+  }
+
+  .navbar-logo {
+    width: 100%;
+    text-align: center; /* Center the text */
+    margin-bottom: 10px; /* Space between logo and navbar links */
+  }
+
+  .navbar-links {
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    justify-content: center; /* Center navbar items */
+    text-align: center;
+  }
 }
